@@ -65,7 +65,6 @@
                     </div>
                 </div>
                 
-
                 <div class="project-card" id="telemetry">
                     <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144745/2._Telemetry_menjqb.mp4')">
                         <div class="title">Time Series Data Visualization and Manipulation Tool</div>
@@ -88,38 +87,6 @@
                             <li>The tool is optimized for large datasets, tested with up to 2.1 million data points (e.g., 20 years of 5-minute gapped rainfall data).</li>
                         </ol>
                         This browser-based tool requires no installation and provides an intuitive interface for efficient time series data handling and visualization.
-                    </div>
-                </div>
-
-                <div class="project-card" id="designrainfall">
-                    <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144951/3._Design_rainfall_clyhwr.mp4')">
-                        <div class="title">Design Rainfall Generator [Excel VBA & ICM Exchange/Ruby]</div>
-                        <div class="short-description">Automates the generation of design rainfall profiles for ICM model assessments.</div>
-                    </div>
-                    <div class="details">
-                        The Design Rainfall Generator streamlines the process of creating rainfall profiles for ICM model assessments, automating what is typically a time-consuming and error-prone task. This tool, built with Excel VBA and ICM Exchange Ruby script, processes a standard PDF from Met Éireann (The Irish Meteorological Service), containing rainfall depths, and generates CSV files for various return periods and storm durations and creates as new ICM databse with the rainfall files:
-                
-                        <ol>
-                            <li>The Excel VBA script extracts rainfall data from a Met Éireann PDF file.</li>
-                            <li>It generates CSV files corresponding to different storm durations and return periods.</li>
-                            <li>An ICM Exchange Ruby script runs on the CSV files, creating an ICM database with the design rainfall files.</li>
-                        </ol>
-                
-                        This tool automates a key part of model assessments for Irish Water catchments, ensuring accuracy and saving significant time in generating design rainfall profiles.
-                    </div>
-                </div>
-
-                <div class="project-card" id="ëxclusivesubcatchments">
-                    <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144896/4._Exclusive_Subcatchments_y2v9td.mp4')">
-                        <div class="title">Exclusive Subcatchment Selector [Ruby]</div>
-                        <div class="short-description">Generates selection lists of exclusive subcatchments draining to specific points of interest within a network.</div>
-                    </div>
-                    <div class="details">
-                        <p> This Ruby script automates the creation of selection lists for exclusive subcatchments or networks draining to user-labeled points of interest, such as flow and depth monitoring points and ancillaries, within a network model. </p>
-                        <p> Exclusive subcatchments refer to those that drain directly to a specific point of interest, excluding any areas draining to upstream points of interest.</p>
-                        <p> Identifying these exclusive subcatchments is crucial for projects like Verification, Optioneering, and survey scoping. Manual identification using built-in ICM tools, like US Tracing, can be time-consuming, challenging, and often prone to errors, especially in large and complex networks with multiple points of interest.</p> 
-                
-                        This script provides a seamless solution, generating accurate selection lists for exclusive subcatchments in seconds, regardless of the network's size or complexity. By significantly reducing the time and effort involved, it ensures perfect accuracy.
                     </div>
                 </div>
                 
@@ -155,7 +122,7 @@
 
                 <div class="project-card" id="gogifit">
                     <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144976/GoGiFit_App_cy1wnn.mp4')">
-                        <div class="title">React Native Mobile Application and Website</div>
+                        <div class="title">GoGiFit - Fitness Training Platform for Android/iOS</div>
                         <div class="short-description">A mobile fitness application developed for a fitness trainer to manage clients and offer online sessions.</div>
                     </div>
                     <div class="details">
@@ -180,6 +147,38 @@
                     </div>
                 </div>
 
+                <div class="project-card" id="designrainfall">
+                    <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144951/3._Design_rainfall_clyhwr.mp4')">
+                        <div class="title">Design Rainfall Generator [Excel VBA & ICM Exchange/Ruby]</div>
+                        <div class="short-description">Automates the generation of design rainfall profiles for ICM model assessments.</div>
+                    </div>
+                    <div class="details">
+                        The Design Rainfall Generator streamlines the process of creating rainfall profiles for ICM model assessments, automating what is typically a time-consuming and error-prone task. This tool, built with Excel VBA and ICM Exchange Ruby script, processes a standard PDF from Met Éireann (The Irish Meteorological Service), containing rainfall depths, and generates CSV files for various return periods and storm durations and creates as new ICM databse with the rainfall files:
+                
+                        <ol>
+                            <li>The Excel VBA script extracts rainfall data from a Met Éireann PDF file.</li>
+                            <li>It generates CSV files corresponding to different storm durations and return periods.</li>
+                            <li>An ICM Exchange Ruby script runs on the CSV files, creating an ICM database with the design rainfall files.</li>
+                        </ol>
+                
+                        This tool automates a key part of model assessments for Irish Water catchments, ensuring accuracy and saving significant time in generating design rainfall profiles.
+                    </div>
+                </div>
+
+                <div class="project-card" id="exclusivesubcatchments">
+                    <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144896/4._Exclusive_Subcatchments_y2v9td.mp4')">
+                        <div class="title">Exclusive Subcatchment Selector [Ruby]</div>
+                        <div class="short-description">Generates selection lists of exclusive subcatchments draining to specific points of interest within a network.</div>
+                    </div>
+                    <div class="details">
+                        <p> This Ruby script automates the creation of selection lists for exclusive subcatchments or networks draining to user-labeled points of interest, such as flow and depth monitoring points and ancillaries, within a network model. </p>
+                        <p> Exclusive subcatchments refer to those that drain directly to a specific point of interest, excluding any areas draining to upstream points of interest.</p>
+                        <p> Identifying these exclusive subcatchments is crucial for projects like Verification, Optioneering, and survey scoping. Manual identification using built-in ICM tools, like US Tracing, can be time-consuming, challenging, and often prone to errors, especially in large and complex networks with multiple points of interest.</p> 
+                
+                        This script provides a seamless solution, generating accurate selection lists for exclusive subcatchments in seconds, regardless of the network's size or complexity. By significantly reducing the time and effort involved, it ensures perfect accuracy.
+                    </div>
+                </div>
+
                 <div class="project-card" id="batchw3w">
                     <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144857/7._Batch_w3w_rbjjjf.mp4')">
                         <div class="title">Python Program for Bulk Fetching Location Data</div>
@@ -200,33 +199,39 @@
                     </div>
                 </div>
 
-                <div class="project-card" id="headloss">
-                    <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144773/9._Headloss_hlx93b.mp4')">
-                        <div class="title">Headloss Calculation at Junctions</div>
-                        <div class="short-description">A script that updates headloss calculations at junctions in ICM networks based on documentation.</div>
+                <div class="project-card" id="pywhatmessage">
+                    <div title="Click to expand/collapse" onclick="toggleDetails(this, '', image=['image-demo/whatsapp/pywhatmessage.png'])">
+                        <div class="title">WhatsApp Message Broadcasting</div>
+                        <div class="short-description">A Python program developed to send automated custom messages to a list of contacts on demand.</div>
                     </div>
                     <div class="details">
-                        In ICM networks, pipe headloss is conventionally updated using the built-in inference tool. However, this tool does not account for the complexities of headloss calculations at junctions, as explained in the ICM documentation. This script updates the headloss at junctions according to the documented calculations and provides a detailed report on the headloss at each junction.
+                        During my graduate training at Hindustan Petroleum Corporation (HPCL) terminal in Suryapet, Telangana, I proposed and developed a message broadcasting program in Python. This tool was designed to send automated, dynamic custom messages to a list of people on demand.<br /><br /> 
+                        The terminal distributed petroleum products to petrol stations within its range, and the central system randomly assigned transport intentions to each tanker. However, tanker operators, contractors, and drivers often had no way of knowing their assignments or destinations until their tankers were ready to leave the terminal with the product.<br /><br /> 
+                        The program, when deployed, could scrape the internal intent assignment system and deliver automated WhatsApp messages detailing the destination, distance, quantity, and more. Importantly, the program did not rely on any paid WhatsApp API services; instead, it utilized the Selenium robotic browser controller to send WhatsApp messages efficiently.
+                        
+                        <br /><br />
+                        The python whatsapp messaging library created as part of this project uses the power of python selenium library to automates sending of WhatsApp messages to a or a list of WhatsApp registered phone numbers.<br /><br />
+                        Capabilities:<br />
+                        1. Checks if the user (message sender) is logged into WhatsApp Web and prompts to login if not.<br />
+                        2. Notify timeouts and poor internet.<br />
+                        3. Send Messages to a list of phone numbers passed as phone_number:Message key:value pairs.<br />
+                        4. Make sure a message is sent within the prescribed time limit.<br />
+                        5. Returns a summary of the messages sent.<br /><br />
+                        Input: A dictionary of phone_number_string : message_string pairs<br /><br />
+                        Return value: A dictionary of summary of sending messages OR an Error_string<br /><br />
+                        The library was written in 2021 and is now obsolete due to updates to WhatsApp Web.
+                        
                     </div>
                 </div>
-                
-                <div class="project-card" id="infiltrationscoping">
-                    <div title="Click to expand/collapse" onclick="toggleDetails(this, '', image=['./image-demo/Infiltration Scoping/Output sample.png'])">
-                        <div class="title">Infiltration Assessment Scoping</div>
-                        <div class="short-description">A Ruby script for identifying sewer network sections for tidal infiltration surveys based on user-defined conditions.</div>
+
+                <div class="project-card" id="hpclreport">
+                    <div title="Click to expand/collapse" onclick="toggleDetails(this, '', image=['image-demo/Python Report/report.png'])">
+                        <div class="title">Web Scraper & Report Generator</div>
+                        <div class="short-description">A Python program developed to automate weekly report generation by compiling data from various internal websites.</div>
                     </div>
                     <div class="details">
-                        This ICM Ruby script is developed to identify potential segments within the sewer network that are suitable for tidal infiltration surveys. It operates based on a set of user-defined conditions, ensuring that only the most relevant sections are highlighted for further analysis. By automating the identification process, the script significantly enhances the efficiency and accuracy of tidal infiltration survey planning.
-                    </div>
-                </div>
-                
-                <div class="project-card" id="trim">
-                    <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144941/11._Network_Trim_ncokii.mp4')">
-                        <div class="title">ICM Network Trimming Script</div>
-                        <div class="short-description">A Ruby script that selects the hydraulically connected network upstream of a chosen point.</div>
-                    </div>
-                    <div class="details">
-                        The is a Ruby tool designed to select the entire hydraulically connected network upstream of a specified point. This script aids in the cutting down the network for quicker simulations while minimizing the risk of accidentally deleting bifurcations and spill side networks, which can occur when using the built-in ICM tracing tools for network trimming.
+                        During my graduate training at HPCL, I automated weekly report generation using a Python web scraper. The program quickly compiles data from various internal websites into a well-formatted Excel report, saving hours of manual work and minimizing errors.<br /><br />
+                        This automation not only improved efficiency but also ensured consistency in reporting, allowing team members to focus on analysis rather than data collection.
                     </div>
                 </div>
                 
@@ -260,39 +265,13 @@
                     </div>
                 </div>
 
-                <div class="project-card" id="pywhatmessage">
-                    <div title="Click to expand/collapse" onclick="toggleDetails(this, '', image=['./image-demo/whatsapp/pywhatmessage.png'])">
-                        <div class="title">WhatsApp Message Broadcasting</div>
-                        <div class="short-description">A Python program developed to send automated custom messages to a list of contacts on demand.</div>
+                <div class="project-card" id="infiltrationscoping">
+                    <div title="Click to expand/collapse" onclick="toggleDetails(this, '', image=['image-demo/Infiltration Scoping/Output sample.png'])">
+                        <div class="title">Infiltration Assessment Scoping</div>
+                        <div class="short-description">A Ruby script for identifying sewer network sections for tidal infiltration surveys based on user-defined conditions.</div>
                     </div>
                     <div class="details">
-                        During my graduate training at Hindustan Petroleum Corporation (HPCL) terminal in Suryapet, Telangana, I proposed and developed a message broadcasting program in Python. This tool was designed to send automated, dynamic custom messages to a list of people on demand.<br /><br /> 
-                        The terminal distributed petroleum products to petrol stations within its range, and the central system randomly assigned transport intentions to each tanker. However, tanker operators, contractors, and drivers often had no way of knowing their assignments or destinations until their tankers were ready to leave the terminal with the product.<br /><br /> 
-                        The program, when deployed, could scrape the internal intent assignment system and deliver automated WhatsApp messages detailing the destination, distance, quantity, and more. Importantly, the program did not rely on any paid WhatsApp API services; instead, it utilized the Selenium robotic browser controller to send WhatsApp messages efficiently.
-                        
-                        <br /><br />
-                        The python whatsapp messaging library created as part of this project uses the power of python selenium library to automates sending of WhatsApp messages to a or a list of WhatsApp registered phone numbers.<br /><br />
-                        Capabilities:<br />
-                        1. Checks if the user (message sender) is logged into WhatsApp Web and prompts to login if not.<br />
-                        2. Notify timeouts and poor internet.<br />
-                        3. Send Messages to a list of phone numbers passed as phone_number:Message key:value pairs.<br />
-                        4. Make sure a message is sent within the prescribed time limit.<br />
-                        5. Returns a summary of the messages sent.<br /><br />
-                        Input: A dictionary of phone_number_string : message_string pairs<br /><br />
-                        Return value: A dictionary of summary of sending messages OR an Error_string<br /><br />
-                        The library was written in 2021 and is now obsolete due to updates to WhatsApp Web.
-                        
-                    </div>
-                </div>
-
-                <div class="project-card" id="hpclreport">
-                    <div title="Click to expand/collapse" onclick="toggleDetails(this, '', image=['./image-demo/Python Report/report.png'])">
-                        <div class="title">Web Scraper & Report Generator</div>
-                        <div class="short-description">A Python program developed to automate weekly report generation by compiling data from various internal websites.</div>
-                    </div>
-                    <div class="details">
-                        During my graduate training at HPCL, I automated weekly report generation using a Python web scraper. The program quickly compiles data from various internal websites into a well-formatted Excel report, saving hours of manual work and minimizing errors.<br /><br />
-                        This automation not only improved efficiency but also ensured consistency in reporting, allowing team members to focus on analysis rather than data collection.
+                        This ICM Ruby script is developed to identify potential segments within the sewer network that are suitable for tidal infiltration surveys. It operates based on a set of user-defined conditions, ensuring that only the most relevant sections are highlighted for further analysis. By automating the identification process, the script significantly enhances the efficiency and accuracy of tidal infiltration survey planning.
                     </div>
                 </div>
 
@@ -481,6 +460,26 @@
                         in the ζ space.
                         The same technique for calculating the J-integral was used for an HY80 steel connection
                         plate with a bolt hole, having a 15mm long crack emanating from the edge of the hole.
+                    </div>
+                </div>
+
+                <div class="project-card" id="headloss">
+                    <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144773/9._Headloss_hlx93b.mp4')">
+                        <div class="title">Headloss Calculation at Junctions</div>
+                        <div class="short-description">A script that updates headloss calculations at junctions in ICM networks based on documentation.</div>
+                    </div>
+                    <div class="details">
+                        In ICM networks, pipe headloss is conventionally updated using the built-in inference tool. However, this tool does not account for the complexities of headloss calculations at junctions, as explained in the ICM documentation. This script updates the headloss at junctions according to the documented calculations and provides a detailed report on the headloss at each junction.
+                    </div>
+                </div>
+
+                <div class="project-card" id="trim">
+                    <div title="Click to expand/collapse" onclick="toggleDetails(this, 'https://res.cloudinary.com/dulmprlsh/video/upload/v1729144941/11._Network_Trim_ncokii.mp4')">
+                        <div class="title">ICM Network Trimming Script</div>
+                        <div class="short-description">A Ruby script that selects the hydraulically connected network upstream of a chosen point.</div>
+                    </div>
+                    <div class="details">
+                        The is a Ruby tool designed to select the entire hydraulically connected network upstream of a specified point. This script aids in the cutting down the network for quicker simulations while minimizing the risk of accidentally deleting bifurcations and spill side networks, which can occur when using the built-in ICM tracing tools for network trimming.
                     </div>
                 </div>
 
