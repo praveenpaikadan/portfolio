@@ -1,0 +1,400 @@
+         Hide scrollbar track
+         ::-webkit-scrollbar-track {
+            background: transparent;  
+         }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Scrollbar handle (thumb) */
+        ::-webkit-scrollbar-thumb {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        /* Hover effect for scrollbar handle */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #e4e4e4;
+        } */
+
+        body {
+            /* font-family: Arial, sans-serif; */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        body {
+            /* background-image: url('1.webp'); */
+            overflow-y: scroll; /* Enable vertical scrolling */
+            font-family: "Roboto Slab", serif;
+        }
+
+        header {
+            background: linear-gradient(45deg, #7200ec, #bd92f5); /* Updated background color */
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* height: 30px; */
+            z-index: 100;
+            height: 4.5rem;
+            padding-right: 15px;
+            padding-left: 15px;
+            align-items: center;
+            border-bottom: 13px solid white ;
+        }
+
+        #myname {
+            font-size: 1.3rem;
+            line-height: 1;
+            color: white;
+            margin-right:50px;
+            /* display: block; */
+            font-family: "Roboto Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            white-space: nowrap;
+            justify-self: center;
+        }
+
+        #header-title {
+            font-size: 1.8rem;
+            line-height: 1.2;
+            color: white;
+            margin: 10px;
+            /* margin-right:50px; */
+            /* display: block; */
+            font-family: "Roboto Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            white-space: nowrap;
+            justify-self: center;
+
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            background: rgb(252, 250, 255);
+            /* position: relative; */
+            display: flex;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            margin-right: 30px;
+            /* align-items: center; */
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+        }
+
+        .inner-container{
+            display: flex; 
+            flex-direction: row;
+        }
+        
+        .project-list {
+            width: 50%;
+            /* min-width: 500px; */
+            padding: 20px;
+            overflow-y: auto;
+            margin: auto;
+            height: 100%;
+            justify-content: start;
+            overflow: scroll;
+        }
+        .project-card {
+            background: rgb(255, 255, 255);
+            /* background-color: white; */
+            border: 0.5px rgba(0,0,0, 0.1) solid;
+            border-left: 5px solid;
+            border-right: 5px solid grey;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            padding: 15px;
+            cursor: pointer;
+            transition: max-height 0.3s ease;
+            overflow: hidden;
+        }
+        .project-card:hover {
+            box-shadow: 
+                0 4px 15px rgba(163, 106, 238, 0.1),  /* Soft shadow */
+                0 8px 30px rgba(152, 87, 212, 0.15);
+        }
+/* 
+        .details{
+            background: 
+            linear-gradient(to top, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
+            linear-gradient(to bottom, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
+            linear-gradient(to left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
+            linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%);
+        } */
+
+        .demo-video-container, .swiper-container {
+            width: 50%;
+            min-width: 400px;
+            /* height: 80vh; */
+            /* padding: 10px; */
+            border-left: 1px solid #ddd;
+            align-self: flex-start;
+            justify-self: center;
+            display: none;
+            border: 1px grey solid;
+            margin-top: 15px;
+            margin-left: 10px;
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+            display: none;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Horizontal, Vertical, Blur, Spread */
+            border-radius: 8px; /* Optional: for rounded corners */
+            position: sticky;
+            top: 50vh;
+            transform: translateY(-50%);
+            
+        }
+        .demo-video-container p {
+            margin: 5;
+            padding: 2;
+            font-weight: 800;
+            color: rgba(0, 0, 0, 0.4);
+
+        }
+        iframe {
+            width: 100%;
+            height: 80%;
+            overflow: scroll;
+        }
+        .details {
+            display: none; /* Initially hide detailed content */
+            margin-top: 10px;
+        }
+        .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #292929; /* Dark gray for better contrast */
+            margin-bottom: 5px; /* Space below the title */
+            font-weight: 600;
+        }
+        .short-description {
+            font-size: 0.9em;
+            color: #555; /* Medium gray for short descriptions */
+            margin-bottom: 10px; /* Space below the short description */
+        }
+        .details {
+            font-size: 0.8em;
+            color: #585858; /* Lighter gray for details */
+            line-height: 1.5; /* Improved line spacing for readability */
+            border-top: 1px solid #ddd; /* A subtle border at the top for separation */
+            padding-top: 10px; /* Space above details */
+            display: none; /* Ensure it's hidden by default */
+            flex-direction: column;
+        }
+
+        #demo-video {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Swiper wrapper (slides container) */
+        .swiper-wrapper {
+            display: flex;
+        }
+
+        /* Swiper slides */
+        .swiper-slide {
+            display: flex; /* Flexbox to align images */
+            justify-content: center; /* Center images horizontally */
+            align-items: center; /* Center images vertically */
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Image styling */
+        .swiper-slide img {
+            width: 100%; /* Ensure images fit the width of the container */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the entire container, cropping if necessary */
+            max-height: 100%; /* Restrict the height to the container height */
+        }
+
+        /* Navigation buttons (default Swiper buttons) */
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: black; /* Button color */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 30px; /* Set width for buttons */
+            height: 30px; /* Set height for buttons */
+        }
+
+        /* Position buttons within the Swiper container */
+        .swiper-button-prev {
+            left: 10px; /* Adjust to fit within the container */
+        }
+
+        .swiper-button-next {
+            right: 10px; /* Adjust to fit within the container */
+        }
+
+        /* Pagination dots */
+        .swiper-pagination-bullet {
+            background-color: black; /* Change color */
+            transform: translateY(-100);
+        }
+
+        .swiper-pagination-fraction {
+            color: black; /* Change color for fraction numbers */
+            font-size: 14px; /* Adjust text size */
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            /* position: absolute; */
+            bottom: 0;
+            width: 100%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .controls button {
+            color: white;
+            border: none;
+            background: #7200ec;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background 0.3s;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        .controls button:hover {
+            background: #0056b3;
+        }
+        .controls input[type="range"] {
+            width: 100%;
+            margin: 0 10px;
+        }
+        .timestamp {
+            color: white;
+            font-size: 14px;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #7200ec, #ab79ec); /* Updated background color */
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            /* height: 30px; */
+            z-index: 100;
+            padding: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        footer a:hover {
+            color: #ddd; /* Change color on hover */
+            
+        }
+
+
+/* Responsive styles for screens smaller than 600px */
+@media only screen and (max-width: 800px) {
+
+    .container{
+        width: 100%
+
+    }
+
+    .inner-container {
+        flex-direction: column-reverse;
+        align-self: center;
+        width: 100%;
+    }
+
+    .project-list{
+        width: 95%;
+        min-width: none;
+        align-self: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+        padding: 0;
+        align-items: center;
+
+    }
+    
+    .demo-video-container, .swiper-container {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        min-width: 0;
+        background-color: white;
+        /* height: 80vh; */
+        /* padding: 10px; */
+        border-left: 1px solid #ddd;
+        align-self: center;
+        justify-self: center;
+        display: none;
+        border: 1px grey solid;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        border-radius: 15px; /* Rounded corners */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Horizontal, Vertical, Blur, Spread */
+        border-radius: 8px; /* Optional: for rounded corners */
+        /* position: absolute; */
+        top: 5rem;
+        transform: translateY(0%);
+        
+    }
+  }
